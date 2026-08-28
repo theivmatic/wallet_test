@@ -23,7 +23,7 @@ class HttpOutcome {
   final Map<String, dynamic> body;
 }
 
-class FakeHttpClientAdapter extends HttpClientAdapter {
+class FakeHttpClientAdapter implements HttpClientAdapter {
   FakeHttpClientAdapter(this.outcomes);
 
   final List<HttpOutcome> outcomes;
